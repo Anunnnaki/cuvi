@@ -4,7 +4,7 @@ const updateval = require("../middleware/updateval")
 const authMiddleware = require("../middleware/session")
 const checkRol = require("../middleware/rol")
 const cuviCtrl = require("../controllers/cuvis")
-const { validatorCreateCuvi, validatorGetCuvi } = require("../validator/cuvis")
+const { validatorCreateCuvi, validatorGetCuvi, val_PersonalData_Update } = require("../validator/cuvis")
 /**
  *  List all cuvis
  */
@@ -14,7 +14,7 @@ router.get("/cuvis", authMiddleware, checkRol(["talent"]), cuviCtrl.getCuvis)
 /**
  * create one cuvi
  */
-router.post("/cuvi", authMiddleware, updateval,validatorCreateCuvi, cuviCtrl.createCuvi)//updateval,
+router.post("/cuvi", authMiddleware, checkRol(["talent"]), updateval, validatorCreateCuvi, cuviCtrl.createCuvi)//updateval,
 
 /**
  * get detail cuvi
@@ -24,8 +24,7 @@ router.post("/cuvi", authMiddleware, updateval,validatorCreateCuvi, cuviCtrl.cre
 /**
  * update one cuvi
  */ 
- router.put("/cuvi/:id", cuviCtrl.updateCuvi)
- router.put("/cuvi2/:id", cuviCtrl.updateCuvi)
+ router.put("/cuvi/:id", authMiddleware, checkRol(["talent"]), val_PersonalData_Update, cuviCtrl.updateCuvi)
 /**
  * delete one cuvi
  */

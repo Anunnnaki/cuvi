@@ -71,18 +71,15 @@ const createCuvi = async (req, res) => {
  */
  const updateCuvi = async (req, res) => {
     try {
-      console.log("entre a upload")
       const bodyclean = req.body
-     // console.log ("bodyclean" + req.body, "matched" + matchedData({bodyclean}))
-      const id = req.params.id
-      //const { id2, ...body2 } = matchedData(req)
-      //  console.log(id2, body2)
-      const data = await Cuvi.findByIdAndUpdate(id, bodyclean)
-      
+      //bodyclean = matchedData({bodyclean})
+      const data = await Cuvi.findByIdAndUpdate(req.params.id, bodyclean)
+      //console.log(data[0])
         res.status(201);
         res.send({ data});
       } catch (e) {
-        handleHttpError(res, "ERROR_UPDATE_ITEMS");
+        console.log(e)
+        handleHttpError(res, "ERROR_UPDATE_ITEMS")
       }
     
 }

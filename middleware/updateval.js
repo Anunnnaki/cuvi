@@ -16,8 +16,8 @@ const updateval = async (req, res, next) => {
 
 const data = await  Cuvi.find({id_user : req.user._id})
 
-
-if(data){
+console.log(data)
+if(data[0]){
     try {
          const data2 = await Cuvi.findByIdAndUpdate(data[0]._id.toString(), req.body)
           res.status(201);
