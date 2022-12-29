@@ -1,17 +1,17 @@
 const mongoose = require("mongoose")
 
-const TestScheme = new mongoose.Schema(
+const AnswerScheme = new mongoose.Schema(
     {
-        name: {
+        id_user : {
              type: String,
-             unique: true,
-        requerided: true
+             requerided: true
              },
-        questions: [{
-            question: {type: String}
+        answers: [{
+            answer: {type: String}
 
              }], 
         comments : [{
+                user_id : {type: String},
                 text : {type: String}
              }]
 
@@ -24,4 +24,4 @@ const TestScheme = new mongoose.Schema(
             }
         )
         
-        module.exports = mongoose.model("tests", TestScheme)
+        module.exports = mongoose.model("answer", AnswerScheme)

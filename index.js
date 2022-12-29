@@ -16,11 +16,15 @@ const PORT = process.env.PORT || 3000
 const dbConnect = require("./config/mongo")
 const cuviRoutes = require("./routes/cuvis")
 const authRoutes = require("./routes/auth")
+const testRoutes = require("./routes/tests")
+const answerRoutes = require("./routes/answers")
 
 
 //Middleware
 app.use("/api", cuviRoutes)
 app.use("/api/auth", authRoutes)
+app.use("/api/test", testRoutes)
+app.use("/api/answer", answerRoutes)
 
 app.listen(PORT, () => {
     console.log('Server express is connected in ' + PORT + ' PORT')

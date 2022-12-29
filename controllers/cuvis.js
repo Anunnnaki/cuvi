@@ -17,7 +17,7 @@ const getCuvis = async (req, res) => {
           res.json(cuvis)
           res.send({ data, user})
     }catch(e){
-        res.send({data})
+        //res.send({data})
         handleHttpError(res, 'Error_get_cuvis')
     }
     
