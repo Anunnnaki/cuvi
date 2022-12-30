@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cuvisheet",
+  "private_key_id": "2bb645cac5e259b51f28584f4fad52b375d5cc31",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDRnoj5mEcLPttY\nT2uEYaAumzPKp4VgmynGLtt3LpwNI03aBL+Bf/OuTb2ughqpSf8ERfLm+ov828zH\nQvkQ7QiqCd56VhdAfb1RQ6E1qum21b0z9xFiqTtriNyFP7wq+0r6HO8x6ie6IOoq\nEE8DU002T6nYhNH5fidYOCnQgwTsFuL1nJVmAs2D8ZYWMRiHSCBYaWnYBClCKE8j\ndqQh/TusC247Rxoo6btZ3efRQ1RDUXao5lfeaW/2eh3oaGwzHqdC2o6M2W1CDpxs\nVK3aOeKgrV7cDDRnR5tSd4Ke0k1NihOgHcDdAewqhRUyhMLVp7J1xiyrBrkngEaE\nTe9D2rX7AgMBAAECggEADf5OWJMw0vBcRjXvEIRP5CyaNYIfZkaVcFR6dCdZZYsg\nzFgazLNU+iLYccjfrMNy0b81qvO42qV1syumYtngBTHpdzM+FCEQvVcNcP664Wi9\nW7W3pGV1wQT+66pIjnn+FFpQIX3nLwa5exthmvA5rFF/HiQnvEcOq1X8fJ3yeywh\nBsJJSbTUmYF2QB2WaBKnIT5AcWCry3cTwpErUlC7+Z69/yY4sg4oIDOAk7ewJmbo\nGXX25aWAhXSAC1BnQHxcSbNXv9H/9r6f4cKBPLdBxaz/8VEvYxgt0e2aiuWEMajN\nss1Rr9dQ6hPQXfeRswlQTLWpnbmF3U1fVfD4sQ2jMQKBgQDoRklsPZj6noPO6zKl\n9drzxtdlTy/fOJbmDDY4mEzOJS812/j0vbGI1eBTJxTvLtF7gnZe04KUVeUqCIj1\nzLNtiqQ7y5nsnYbq+oiE/hTGAJZOg3cPImjzP4fR2gsxoxiUP349Mp3z/RwG0jzr\nkY8HJWshc5czjscU8SmcwZHcKQKBgQDnB9ayubKKBrhH7JGUlbHMq3hKMCxm0YTR\nF25rN4gnLAEMUT/Cv18oQTBiVGI/Cl+m3joeZcBJhQU2W4vBAySNrxsHfvdO+qDv\nRYm+/qO1SwYO+02ojwhh2b436Ergf2CB6qhDSl5O0GN4pp5YMjCy61y4v0w0CbNd\nCFP5cuBFgwKBgQCSJceFB6z95EdjJrITooJF6NMWt6CTf3PTA9QKACoze0odRW97\n7u+J/ajMKUcOyBKe+BOqzsLWusUakYw7vLUZM6bqyMztCKEfsMu9gnFntG7er/F1\n4FzQ0SSQcfWhIdIRVXIE55hjMNs1n4sdXdT01iJ2RdjZY/j3wFZCf7lbIQKBgCUs\nVLZjPMAKvsIL5YzD3VzyRiOhxrMwiS9flsu3nre20+BYfmrmgfgnLRLVQw2jrKpb\n3XwgoSTzO1h4uG7xA4Ospiu5mS9jElwNk1FhBZRZIvtsIh26Df44m+vA+7NNq4ib\n6kERiUUjMK4sGRRV1xIi3sN3PFqvKOYSPfjILB/jAoGAL3ZZe18LFBj6Jd+ikn0M\nYsKpbHi0HDR6yw0hnjz6I+2ecXlQr+oJM+uOZdm2eFM/IQt6vM9W1pvaq7y4UdZ9\njWsyZHXJis7t2iKt4bm+VHok0iqkbU3bbbaYSSEGzjtJ3LcAwyfGW7bjoO0V7bNb\n7XiGi36lBAMZHSx8CDRizp8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cuvisheet@cuvisheet.iam.gserviceaccount.com",
+  "client_id": "106354755108691717276",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cuvisheet%40cuvisheet.iam.gserviceaccount.com"
+}
