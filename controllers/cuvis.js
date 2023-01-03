@@ -32,8 +32,11 @@ const getCuvi = async (req, res) => {
     //req = matchedData(req)
     //const {id} = req.params.id
     const id = req.params.id
-    console.log(id)
-    const data = await Cuvi.findById(id)
+    //console.log(id)
+    const data = await Cuvi.findOne({
+      id_user :  id
+    })
+    console.log (data)
     res.send({ data })
   }catch(e){
     handleHttpError(res, "ERROR_GET_CUVI")

@@ -19,7 +19,7 @@ router.post("/cuvi", authMiddleware, checkRol(["talent"]), updateval, validatorC
 /**
  * get detail cuvi
  */
- router.get("/cuvi/:id", cuviCtrl.getCuvi)
+ router.get("/cuvi/:id", authMiddleware, checkRol(["talent"]), cuviCtrl.getCuvi)
 
 /**
  * update one cuvi
