@@ -56,7 +56,9 @@ const CuviScheme = new mongoose.Schema(
         dm:{ type: String }
     },
     date_place_birth:{
-        date:{
+        date:{ type: date
+
+            /*
             day:{
                 type: Number
             },
@@ -65,7 +67,7 @@ const CuviScheme = new mongoose.Schema(
              },
              year:{
                 type: Number
-             }
+             } */
         },
         place:{
             country: {
