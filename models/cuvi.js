@@ -8,51 +8,54 @@ const CuviScheme = new mongoose.Schema(
              requerided: true
              },
         personal_data: {
-         name: {
+           
+           
+
+    name: {
         type: String,
         requerired: true
-         },
-        photo: { type: String },
-        first_secondname: {
+    },
+    photo: { type: String },
+    first_secondname: {
         type: String,
         requerired: true
 
-        },
-        second_secondname: {
+    },
+    second_secondname: {
         type: String
-        },
-        typeid: {
-        type: ["cc", "ce", "pas"],
+    },
+    typeid: {
+        type: String,
         default: "cc",
         requerired: true
 
-        },
-        id_number: {
+    },
+    id_number: {
         type: Number,
         requerired: true,
         unique: true
-        },
-        sex: {
-        type: ["f", "m"],
+    },
+    sex: {
+        type: String,
         requerired: true
 
-        },
-        nacionality: {
-        type: ["col", "extranjero"],
+    },
+    nacionality: {
+        type: String,
         requerired: true,
         default: "col"
 
-        },
-        country: {
+    },
+    country: {
         type: String,
         default: "Colombia"
-        },
-        military_card: {
-        tipo: ["primera", "segunda"],
+    },
+    military_card: {
+        tipo: String,
         number: { type: Number },
         dm:{ type: String }
-        },
-        date_place_birth:{
+    },
+    date_place_birth:{
         date:{
             day:{
                 type: Number
@@ -77,7 +80,7 @@ const CuviScheme = new mongoose.Schema(
         }
         
         }
-    },/*
+    },
     academic_training: {
         basic_half_education: {
             title: {type: String},
@@ -90,7 +93,8 @@ const CuviScheme = new mongoose.Schema(
         }
 
 
-*/
+
+    }, 
     },
     {
         versionKey: false,

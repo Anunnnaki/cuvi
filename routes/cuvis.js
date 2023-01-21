@@ -25,7 +25,11 @@ router.post("/cuvi", authMiddleware, checkRol(["talent"]), updateval, validatorC
  * update one cuvi
  */ 
  router.put("/cuvi/:id", authMiddleware, checkRol(["talent"]), val_PersonalData_Update, cuviCtrl.updateCuvi)
-/**
+ router.put("/cuvi/ei/:id", authMiddleware, checkRol(["talent"]), cuviCtrl.updateCuvi)  //update education basic
+ router.put("/cuvi/es/:id", authMiddleware, checkRol(["talent"]), cuviCtrl.updateCuvi) //update education high
+ router.put("/cuvi/id/:id", authMiddleware, checkRol(["talent"]), cuviCtrl.updateCuvi) //update education lenguaje
+
+ /**
  * delete one cuvi
  */
  router.delete("/cuvi/:id", cuviCtrl.deleteCuvi)
