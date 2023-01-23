@@ -59,8 +59,8 @@ return validateResults(req, res, next)
  * Validator update personal data cuvi
  */
 
-    const val_PersonalData_Update = [
-        check("personal_data"),
+    const val_Data_Update = [
+        //check("personal_data"),
 /**
  * Academy Education
  */
@@ -82,4 +82,4 @@ check("academic_training.lenguage"),
         }
         
         ]
-module.exports = {val_PersonalData_Update,validatorCreateCuvi, validatorGetCuvi}
+module.exports = {val_Data_Update,validatorCreateCuvi, validatorGetCuvi}
