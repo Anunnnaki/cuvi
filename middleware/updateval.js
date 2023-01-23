@@ -16,7 +16,7 @@ const updateval = async (req, res, next) => {
 
 const data = await  Cuvi.find({id_user : req.user._id})
 
-console.log(data)
+//console.log(data)
 if(data[0]){
     try {
          const data2 = await Cuvi.findByIdAndUpdate(data[0]._id.toString(), req.body)
@@ -24,7 +24,7 @@ if(data[0]){
           res.send({ data2});
         } catch (e) {
             console.log(e)
-          handleHttpError(res, "ERROR_UPDATE_ITEMS");
+          handleHttpError(e, "ERROR_UPDATE_ITEMS");
         }
     
 }

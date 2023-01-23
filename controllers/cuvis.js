@@ -62,7 +62,7 @@ const createCuvi = async (req, res) => {
         res.send({ data});
       } catch (e) {
         console.log(e)
-        handleHttpError(res, "ERROR_CREATE_ITEMS");
+        handleHttpError(e, "ERROR_CREATE_ITEMS");
       }
     
 }
@@ -74,15 +74,16 @@ const createCuvi = async (req, res) => {
  */
  const updateCuvi = async (req, res) => {
     try {
+      const body = matchedData(req)
+      console.log("body", body)
       const bodyclean = req.body
-      //bodyclean = matchedData({bodyclean})
-      const data = await Cuvi.findByIdAndUpdate(req.params.id, bodyclean)
-      //console.log(data[0])
+      const data = await Cuvi.findByIdAndUpdate(req.params.id, body)
+      
         res.status(201);
         res.send({ data});
       } catch (e) {
         console.log(e)
-        handleHttpError(res, "ERROR_UPDATE_ITEMS")
+        handleHttpError(e, "ERROR_UPDATE_ITEMS")
       }
     
 }
