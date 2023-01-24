@@ -64,8 +64,8 @@ const CuviScheme = new mongoose.Schema(
                 type: String
             }
         }
-    },
-    post_address:{
+        },
+        post_address:{
         address:{ type: String },
         country: { type: String },
         depto:{type: String},

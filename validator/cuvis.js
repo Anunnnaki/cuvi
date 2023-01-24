@@ -18,10 +18,12 @@ check("personal_data.id_number").exists().notEmpty().isLength({min:6, max:20}),
 check("personal_data.sex").exists().notEmpty().isLength({min:1, max:1}),
 check("personal_data.nacionality").exists().notEmpty().isLength({min:1, max:90}),
 check("personal_data.country").exists().notEmpty().isLength({min:1, max:90}),
+//check("personal_data.military_card"),
+
 check("personal_data.military_card.type").exists().notEmpty().isLength({min:1, max:20}),
 check("personal_data.military_card.number").exists().notEmpty().isLength({min:1, max:20}),
 check("personal_data.military_card.dm").exists().notEmpty().isLength({min:1, max:3}),
-check("personal_data.date_place_birth"),
+check("personal_data.date_place_birth."),
 check("personal_data.post_address"),
 /**
  * Academy Education
