@@ -84,12 +84,12 @@ const CuviScheme = new mongoose.Schema(
 
         },
         high_education:[{
-            academic_modality:{type: String},
-            aprobed_semestres:{type: Number},
+            academicModality:{type: String},
+            approvedSemesters:{type: Number},
             graduate:{type: String},
-            title:{type: String},
-            date_end:{type: String},
-            id_profesional_target:{type: Number}
+            nameStudies:{type: String},
+            terminationDate:{type: String},
+            professionalCard:{type: Number}
         }],
         lenguage:[{
             idiom: {type: String},
