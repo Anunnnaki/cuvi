@@ -2,10 +2,12 @@ const mongoose = require ("mongoose")
 require('dotenv').config()
 
 const dbConnect = () => {
+    mongoose.set('strictQuery', false);
     mongoose.connect(process.env.URI,
         {
             useNewUrlParser: true,
-            useUnifiedTopology: true,        
+            useUnifiedTopology: true, 
+                
         }, 
         (err, res) => {
             if(!err){
