@@ -62,7 +62,7 @@ return validateResults(req, res, next)
  */
 
     const val_Data_Update = [
-        //check("personal_data"),
+        check("personal_data"),
 /**
  * Academy Education
  */
