@@ -79,8 +79,7 @@ const createCuvi = async (req, res) => {
       const bodyclean = req.body
       const data = await Cuvi.findByIdAndUpdate(req.params.id, req.body)
       console.log("data", data)
-        res.status(201);
-        res.send({ data});
+      
       } catch (e) {
         console.log(e)
         handleHttpError(e, "ERROR_UPDATE_ITEMS")
